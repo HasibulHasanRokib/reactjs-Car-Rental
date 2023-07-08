@@ -1,0 +1,44 @@
+.navbar{
+    display: flex;
+    margin: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+.nav-logo{
+cursor: pointer;
+
+}
+.nav-items{
+display: flex;
+
+}
+.nav-item{
+    margin: 0 1rem;
+    font-weight: 600;
+
+}
+.nav-item:hover{
+color:#ff4c30;
+}
+.nav-item.active{
+    color:#ff4c30;
+}
+.signIn{
+    font-size: 1.1rem;
+    margin: 0 1.5rem;
+    font-weight: 600;
+}
+.register{
+    background-color: #ef4444;
+    padding: 0.7rem;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    width: 8rem;
+    box-shadow: 0 0 10px #ef4444;
+    
+
+}
