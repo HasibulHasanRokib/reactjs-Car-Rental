@@ -1,6 +1,8 @@
 import Form from "./Form";
 import "./Home.css";
 import Model from "./Model";
+import HeroImg from '/src/assets/hero-bg.3b5f7a2502f0f81d1490.png'
+import MainCar from '/src/assets/main-car.png'
 
 const Home = () => {
   return (
@@ -9,7 +11,7 @@ const Home = () => {
         <div className="container-home">
           <img
             className="hero-img"
-            src="/src/assets/hero-bg.3b5f7a2502f0f81d1490.png"
+            src={HeroImg}
             alt=""
           />
           <div className="home-text">
@@ -29,7 +31,7 @@ const Home = () => {
             </button>
           </div>
           <div className="home-img z-20">
-            <img src="/src/assets/main-car.png" alt="" />
+            <img src={MainCar} alt="" />
           </div>
         </div>
 
