@@ -51,5 +51,7 @@ justify-content: space-between;
     }
     .model-card-section{
         grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
     }
 }
