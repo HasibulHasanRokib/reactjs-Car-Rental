@@ -1,0 +1,55 @@
+.model-section{
+    width: 80%;
+    /* background-color: gold; */
+    margin: 8rem auto;
+}
+.model-card-section{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+}
+.model-card{
+width: 23rem;
+height: 36rem;
+border-radius: 5px;
+background-color: #fff;
+border: 1px solid rgba(0, 0, 0, 0.16);
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.car-model-img{
+height: 45%;
+width: 100%;
+border-radius: 5px;
+}
+.model-card-body{
+padding:1rem 2rem;
+}
+
+.model-text{
+display: flex;
+justify-content: space-between;
+}
+.ride-btn{
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 1rem;
+    width:19rem;
+    margin-top: 1rem;
+    background-color: #ff4d30;
+    border: 2px solid #ff4d30;
+    border-radius: 0.3rem;
+    color: #fff;
+    box-shadow: 0 10px 15px 0 rgba(255,83,48,.35);
+    transition: all 0.3 linear;
+}
+.ride-btn:hover{
+    box-shadow: 0 10px 15px 0 rgba(255,83,48,.45);   
+}
+@media screen and (max-width:500px){
+    .model-section{
+        width: 100%;
+    }
+    .model-card-section{
+        grid-template-columns: auto;
+    }
+}

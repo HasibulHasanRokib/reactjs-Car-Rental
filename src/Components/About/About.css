@@ -1,0 +1,62 @@
+.about-section{
+    width: 85%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.about-heading{
+    height: 30vh;
+}
+.about-company{
+    padding: 2rem 0;
+    width: 85%;
+    margin: 0 auto;
+}
+.about-img{
+    background-image:url(/src/assets/about-main.ed0137841dc67d61ec95.jpg) ;
+    background-color: #cccccc;
+    height: 30rem;
+    width: 30rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.about-text-body{
+    width: 40%;
+}
+.about-card{
+    width: 9rem;
+    padding: 1rem;
+}
+.about-contact{
+    height: 30vh;
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width:500px){
+    .about-section{
+        width: 100%;
+    }
+    .about-company{
+        flex-direction: column;
+    }
+    .about-img{
+        width: 20rem;
+        height: 20rem;
+
+    }
+    .about-text-body{
+        width: 100%;
+        text-align: center;
+    }
+    .about-focus-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-contact{
+        height: auto;
+        padding: 1rem;
+    }
+}

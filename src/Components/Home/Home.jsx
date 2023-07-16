@@ -1,8 +1,17 @@
 import Form from "./Form";
 import "./Home.css";
 import Model from "./Model";
+import Plan from "./Plan";
+import Testimonial from "./Testimonial";
 import HeroImg from '/src/assets/hero-bg.3b5f7a2502f0f81d1490.png'
 import MainCar from '/src/assets/main-car.png'
+import Cars from '/src/assets/main.70cd75042bdf42515d92.png'
+import deals from "/src/assets/download (3).png"
+import dealsOne from "/src/assets/download (4).png"
+import dealsTwo from "/src/assets/download (5).png"
+import appStore from "/src/assets/appstore.svg"
+import googleApp from "/src/assets/googleapp.svg"
+import mobileApp from "/src/assets/app3.jpg"
 
 const Home = () => {
   return (
@@ -37,50 +46,7 @@ const Home = () => {
 
         <Form />
 
-        <div className="plan-section">
-          <div className="plan-text ">
-            <h4 className="text-2xl font-bold">Plan your trip now</h4>
-            <h3 className="text-5xl font-bold mt-5">Quick & easy car rental</h3>
-            <div className="plan-card">
-              <div className="card">
-                <div className="card-img">
-                  <img src="/src/assets/download (2).png" alt="" />
-                </div>
-                <div className="card-body">
-                  <h2 className="text-xl font-bold mb-3">Select Car</h2>
-                  <p>
-                    We offers a big range of vehicles for all your driving
-                    needs. We have the perfect car to meet your needs
-                  </p>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-img">
-                  <img src="/src/assets/download (1).png" alt="" />
-                </div>
-                <div className="card-body">
-                  <h2 className="text-xl font-bold mb-3">Contact Operator</h2>
-                  <p>
-                    Our knowledgeable and friendly operators are always ready to
-                    help with any questions or concerns
-                  </p>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-img">
-                  <img src="/src/assets/download.png" alt="" />
-                </div>
-                <div className="card-body">
-                  <h2 className="text-xl font-bold mb-3">Let`s Drive</h2>
-                  <p>
-                    Whether you're hitting the open road, we've got you covered
-                    with our wide range of cars
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Plan/>
 
         <Model />
 
@@ -97,7 +63,7 @@ const Home = () => {
         </div>
 
         <div className="choose-section">
-          <img src="/src/assets/main.70cd75042bdf42515d92.png" alt="" />
+          <img src={Cars} alt="" />
         </div>
 
         <div className="deals-section">
@@ -121,7 +87,7 @@ const Home = () => {
               <div className="deals-card-img">
                 <img
                   className="deals-img"
-                  src="/src/assets/download (3).png"
+                  src={deals}
                   alt=""
                 />
               </div>
@@ -137,7 +103,7 @@ const Home = () => {
               <div className="deals-card-img">
                 <img
                   className="deals-img"
-                  src="/src/assets/download (4).png"
+                  src={dealsOne}
                   alt=""
                 />
               </div>
@@ -155,7 +121,7 @@ const Home = () => {
               <div className="deals-card-img">
                 <img
                   className="deals-img"
-                  src="/src/assets/download (5).png"
+                  src={dealsTwo}
                   alt=""
                 />
               </div>
@@ -169,63 +135,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-
-        <div className="testimonials-section">
-          <div className="testimonials-text">
-            <h5 className="text-xl font-bold mt-3">Reviewed by People</h5>
-            <h3 className="text-5xl font-bold mt-3 mb-4">
-              Client's Testimonials
-            </h3>
-            <p>
-              Discover the positive impact we`ve made on the our clients by
-              reading through their testimonials. Our clients have experienced
-              our service and results, and they`re eager to share their positive
-              experiences with you
-            </p>
-          </div>
-          <div className="testimonials-card-section">
-            <div className="testimonials-card rounded">
-              <div className="testimonials-card-text">
-                <p className="text-2xl font-bold">
-                  We rented a car from this website and had an amazing
-                  experience! The booking was easy and the rental rates were
-                  very affordable.
-                </p>
-              </div>
-              <div className="testimonials-card-body flex">
-                <img
-                  className="cilent-img"
-                  src="/src/assets/cilent-1.png"
-                  alt=""
-                />
-                <div className="testimonials-clint-name">
-                  <h2 className="font-bold">Ron Rizzly</h2>
-                  <h5>Novi Sad</h5>
-                </div>
-              </div>
-            </div>
-            <div className="testimonials-card rounded">
-              <div className="testimonials-card-text">
-                <p className="text-2xl font-bold">
-                  "We rented a car from this website and had an amazing
-                  experience! The booking was easy and the rental rates were
-                  very affordable."
-                </p>
-              </div>
-              <div className="testimonials-card-body flex">
-                <img
-                  className="cilent-img"
-                  src="/src/assets/cilent-2.png"
-                  alt=""
-                />
-                <div className="testimonials-clint-name">
-                  <h2 className="font-bold">Ron Rizzly</h2>
-                  <h5>Novi Sad</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          
+          <Testimonial/>
+         
         <div className="download-section">
           <div className="download-text">
             <h2 className="text-5xl font-extrabold leading-relaxed">
@@ -238,15 +150,15 @@ const Home = () => {
             </p>
             <div className="download-link flex">
               <a href="" className="m-3">
-                <img src="/src/assets/appstore.svg" alt="" />
+                <img src={appStore} alt="" />
               </a>
               <a href="" className="m-3">
-                <img src="/src/assets/googleapp.svg" alt="" />
+                <img src={googleApp} alt="" />
               </a>
             </div>
           </div>
           <div className="download-img">
-            <img className="" src="/src/assets/app3.jpg" alt="" />
+            <img className="" src={mobileApp} alt="" />
           </div>
         </div>
       </div>

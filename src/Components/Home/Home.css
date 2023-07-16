@@ -277,3 +277,92 @@ td{
 .download-img{
     width: 28rem;
 }
+@media screen and (max-width:500px) {
+    .container-home{
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+    .hero-img{
+        display: none;
+    }
+    .home-img{
+        display: none;
+    }
+    .form-section{
+        width: 100%;
+        padding: 1rem;
+    }
+    .form-body{
+        height: auto;
+        grid-template-columns: auto;
+    }
+    .plan-section{
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .plan-card{
+        grid-template-columns: auto;
+        margin: 0;
+    }
+    .card{
+        margin-top: 1rem;
+    }
+    .models-section{
+        width: 100%;
+        height: auto;
+        
+    }
+    .models-text{
+        width: 100%;
+    }
+    .models-body{
+        margin: 1rem;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .banner-section{
+        height: auto;
+        margin-top: 1rem;
+    }
+    .choose-section{
+        width: 100%;
+        margin: 1rem;
+    }
+    .deals-section{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .deals-text{
+        width: 100%;
+        text-align: center;
+    }
+    .testimonials-section{
+        width: 100%;
+        height: auto;
+    }
+    .testimonials-text{
+        width: 100%;
+
+    }
+    .testimonials-card-section{
+        flex-direction: column;
+    }
+    .testimonials-card{
+        margin-left: 0;
+        width: 21rem;
+        height: auto;
+    }
+    .download-section{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+    }
+    .download-text{
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -27,3 +27,18 @@ margin-top: 1.5rem;
 padding: 0.5rem;
 
 }
+@media screen and (max-width:500px){
+    .row{
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .footer-section{
+        height: auto;
+        text-align: center;
+        margin: 2rem 0;
+    }
+    .section-one{
+        width: 100%;
+    }
+}

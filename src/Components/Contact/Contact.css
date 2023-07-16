@@ -1,0 +1,47 @@
+.contact-section{
+width: 80%;
+padding: 1rem;
+margin: 8rem auto;
+background-image: url(/src/assets/bg-contact.png);
+background-position: center;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap:2rem;
+}
+.contact-text{
+/* width: 40%; */
+}
+.contact-input{
+width: 40rem;
+padding: 1rem;
+background-color: #f0eded;
+outline: none;
+margin: 0.4rem 0;
+}
+.contact-btn{
+    width: 40rem;
+    padding: 1rem;
+    background-color: #ef4444;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #fff;
+    box-shadow: 0 0 5px #ef4444;
+    margin: 0.5rem 0;
+}
+@media screen and (max-width:500px){
+    .contact-section{
+        width: 100%;
+        flex-direction: column;
+    }
+    .contact-form{
+        width: 100%;
+    }
+    .contact-input{
+        width: 22rem;
+    }
+    .contact-btn{
+        width: 22rem;
+    }
+}

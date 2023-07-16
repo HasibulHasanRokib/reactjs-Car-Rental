@@ -1,4 +1,5 @@
 import './Home.css'
+import modelCar from "/src/assets/audia1.jpg"
 
 
 const Model = () => {
@@ -23,7 +24,7 @@ const Model = () => {
               <button className="models-option">Audi A1 S-Line</button>
             </div>
             <div className="car-img">
-              <img src="/src/assets/audia1.jpg" alt="" />
+              <img src={modelCar} alt="" />
             </div>
             <div className="car-info">
               <table>

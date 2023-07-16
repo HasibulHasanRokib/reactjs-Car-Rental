@@ -10,7 +10,7 @@ const Footer = () => {
                 <p className='my-4'>We offers a big range of vehicles for all your diving needs. We have the perfect car to meet your needs.</p>
                 <p className='font-semibold my-2'><i className="fa-solid fa-phone"></i> (123) -456-789</p>
                 <p className='font-semibold my-2'><i className="fa-solid fa-envelope"></i> carrental@gmail.com</p>
-                <p>Design by XpeedStudio</p>
+                <p>Development by Hasibul Hasan Rokib</p>
             </div>
             <div className="section-two">
                 <h3 className='my-4 font-bold text-xl'>COMPANY</h3>
@@ -33,7 +33,7 @@ const Footer = () => {
             </div>
             <div className="section-four">
              <h3 className='my-4 font-bold text-xl'>SUBSCRIPTION</h3>
-             <p className='my-2 w-64'>Subscribe your Email address for latest news & updates.</p>
+             <p className='my-2 md:w-64'>Subscribe your Email address for latest news & updates.</p>
              <input type="email" name="email" placeholder='Enter Email Address' id="email" /><br/>
              <button className='submit-btn'>Submit</button>
             </div>

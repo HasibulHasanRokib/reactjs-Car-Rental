@@ -39,6 +39,45 @@ color:#ff4c30;
     font-weight: 600;
     width: 8rem;
     box-shadow: 0 0 10px #ef4444;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .mobile-nav{
+        display: none;
+    }
+@media screen and (max-width:500px) {
+    .nav-menu{
+        display: block;
+    }
+ .navbar{
+    /* display: none; */
+    justify-content: space-between;
     
-
+ }   
+ .nav-items{
+    display: none;
+ }
+ .nav-btn{
+    display: none;
+ }
+ .mobile-nav {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 300;
+    transform: translate(100%,0%);
+    transition: all .5s linear;
+  }
+  .mobile-nav--open{
+    transform: translate(0,0%);
+  
+  }
 }
