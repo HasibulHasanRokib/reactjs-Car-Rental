@@ -60,19 +60,25 @@ const [show,setShow]=useState(false)
 </span>
 <ul className="flex flex-col gap-10">
 <li>
-  <a onClick={()=>{setShow(!show)}} className="mx-4 font-bold text-2xl text-gray-600 hover:text-blue-600" href="#home">Home</a>
+  <NavLink onClick={()=>{setShow(!show)}} className="mx-4 font-bold text-2xl text-gray-600 hover:text-blue-600" to={'/'}>Home</NavLink>
 </li>
 <li>
-  <a onClick={()=>{setShow(!show)}} className="mx-4 font-bold text-2xl text-gray-600 hover:text-blue-600" href="#about">About</a>
+  <NavLink onClick={()=>{setShow(!show)}} className="mx-4 font-bold text-2xl text-gray-600 hover:text-blue-600" to={'/about'}>About</NavLink>
 </li>
 <li>
-  <a onClick={()=>{setShow(!show)}} className="mx-4 font-bold text-2xl text-gray-600 hover:text-blue-600" href="#project">Projects</a>
+  <NavLink onClick={()=>{setShow(!show)}} className="mx-4 font-bold text-2xl text-gray-600 hover:text-blue-600" to={'/model'}>Vehicle Models</NavLink>
 </li>
 <li>
-  <a onClick={()=>{setShow(!show)}} className="mx-4 font-bold text-2xl text-gray-600 hover:text-blue-600" href="#contact">Contact</a>
+  <NavLink onClick={()=>{setShow(!show)}} className="mx-4 font-bold text-2xl text-gray-600 hover:text-blue-600" to={'/test'}>Testimonials</NavLink>
 </li>
 <li>
-<div className="nav-mobile-btn flex flex-col">
+  <NavLink onClick={()=>{setShow(!show)}} className="mx-4 font-bold text-2xl text-gray-600 hover:text-blue-600" to={'/team'}> Our Team</NavLink>
+</li>
+<li>
+  <NavLink onClick={()=>{setShow(!show)}} className="mx-4 font-bold text-2xl text-gray-600 hover:text-blue-600" to={'/contact'}>Contact</NavLink>
+</li>
+<li>
+<div className="nav-mobile-btn flex flex-col justify-center items-center">
           <button className="signIn my-4">Sign In</button>
           <button className="register">Register</button>
         </div>
