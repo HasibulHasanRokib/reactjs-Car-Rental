@@ -1,7 +1,3 @@
-/* 
-home
-home-text
-home-img */
 
 .container-home{
     width: 80%;
@@ -60,10 +56,11 @@ home-img */
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 2rem;
-  height: 30vh;
+  max-height: auto;
+  min-height: 30vh;
  
 }
-.search-btn{
+.form-body button{
     background-color: #ef4444;
     font-size: 1.3rem;
     height: 3rem;
@@ -99,7 +96,7 @@ home-img */
     background-color: #fff;
     width: 90%;
     margin: 0 auto;
-    height: 90vh;
+    height: auto;
     padding: 1rem;
    
 
@@ -133,6 +130,7 @@ home-img */
     background-color: #ef4444;
     color: #fff;
 }
+
 .car-img{
     position: relative;
 }
@@ -156,16 +154,16 @@ td{
     padding: 0.3rem;
 
 }
-.reserve-btn{
-    background-color: #ef4444;
-   
+.car-info a{
+    background-color: #ef4444; 
+    display: inline-block;  
     width: 20rem;
-    height: 3rem;
+    padding: 1rem;
+    text-align: center;
     color: #e9e9e9;
     font-weight: bold;
     font-size: 1.4rem;
-    margin-top: 2rem;
-   
+    margin-top: 0.5rem; 
     box-shadow: 0 0 10px #ef4444;
 }
 .banner-section{
@@ -193,11 +191,24 @@ td{
 .deals-text{
     width: 45%;
 }
+.up-btn{
+    background-color: #ef4444;
+    padding: 0.5rem;
+    width: 3rem;
+    text-align: center;
+    color: #e9e9e9;
+    font-size: 1.3rem;
+    position:fixed;
+    top: 92%;
+    left: 95%;
+    
+}
 .details-btn{
     margin-top: 2rem;
     background-color: #ef4444;
     font-size: 1.2rem;
-    padding: 0.5rem;
+    display: inline-block;
+    padding: 1rem;
     width: 10rem;
     font-weight: 600;
     color: #e9e9e9;
@@ -277,6 +288,32 @@ td{
 .download-img{
     width: 28rem;
 }
+.popUp-display{
+background-color: rgba(0, 0, 0, 0.4);
+backdrop-filter: blur(2px);
+position: fixed;
+top: 0%;
+z-index: 99999;
+width: 100%;
+height: 100%;
+
+
+
+}
+.popUp-body{
+background-color: #fff;
+width: 50%;
+height: 100vh;
+margin: 0 auto;
+
+/* padding: 1rem; */
+box-shadow: 0 0 5px #1e293b;
+overflow-x:hidden;
+overflow-y:scroll;
+
+
+}
+
 @media screen and (max-width:500px) {
     .container-home{
         width: 100%;
@@ -292,6 +329,7 @@ td{
     .form-section{
         width: 90%;
         padding: 1rem;
+       
     }
     .form-body{
         height: auto;
@@ -364,5 +402,8 @@ td{
     .download-text{
         width: 100%;
         text-align: center;
+    }
+    .popUp-body{
+        width: 100%;
     }
 }

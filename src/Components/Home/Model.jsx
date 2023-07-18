@@ -1,8 +1,15 @@
 import './Home.css'
 import modelCar from "/src/assets/audia1.jpg"
+import { CAR_DATA } from './CarData'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 
 const Model = () => {
+const [cars,setCars]=useState(CAR_DATA)
+const[carId,setCarId]=useState("0")
+const[active,setActive]=useState("0")
+
   return (
     <div>
               <div className="models-section">
@@ -16,55 +23,84 @@ const Model = () => {
           </div>
           <div className="models-body">
             <div className="button-section">
-              <button className="models-option">Audi A1 S-Line</button>
-              <button className="models-option">Audi A1 S-Line</button>
-              <button className="models-option">Audi A1 S-Line</button>
-              <button className="models-option">Audi A1 S-Line</button>
-              <button className="models-option">Audi A1 S-Line</button>
-              <button className="models-option">Audi A1 S-Line</button>
+         
+              <button  className="models-option" onClick={()=>{
+                setCarId("0")
+                setActive("0")
+              }}>VW Golf 6</button>
+              <button className="models-option" onClick={()=>{
+                setCarId("1")
+                setActive("1")
+              }} >Audi A1 S-Line</button>
+              <button className="models-option" onClick={()=>{
+                setCarId("2")
+                setActive("2")}}
+              >Toyota Camry</button>
+              <button className="models-option" onClick={()=>{
+                setCarId("3")
+                setActive("3")}}
+              >BMW 320 ModernLine</button>
+              <button className="models-option" onClick={()=>{
+                setCarId("4")
+                setActive("4")}}
+              >Mercedes-Benz GLK</button>
+              <button className="models-option" onClick={()=>{
+                setCarId("5")
+                setActive("5")}}
+              >VW Passat CC</button>
             </div>
-            <div className="car-img">
-              <img src={modelCar} alt="" />
+            { cars[carId].map((car,index)=>{
+              return(
+                <>
+                <div key={index} className="car-img">
+              <img src={car.img} alt="" />
             </div>
+                        
             <div className="car-info">
               <table>
                 <thead>
-                  <th>$45</th>
+                  <th>${car.price}</th>
                   <th>/rent per day</th>
                 </thead>
                 <tbody>
                   <tr>
                     <td>Model</td>
-                    <td>Model</td>
+                    <td>{car.model}</td>
                   </tr>
                   <tr>
-                    <td>Model</td>
-                    <td>Model</td>
+                    <td>Mark</td>
+                    <td>{car.mark}</td>
                   </tr>
                   <tr>
-                    <td>Model</td>
-                    <td>Model</td>
+                    <td>Year</td>
+                    <td>{car.year}</td>
                   </tr>
                   <tr>
-                    <td>Model</td>
-                    <td>Model</td>
+                    <td>Doors</td>
+                    <td>{car.doors}</td>
                   </tr>
                   <tr>
-                    <td>Model</td>
-                    <td>Model</td>
+                    <td>AC</td>
+                    <td>{car.air}</td>
                   </tr>
                   <tr>
-                    <td>Model</td>
-                    <td>Model</td>
+                    <td>Transmission</td>
+                    <td>{car.transmission}</td>
                   </tr>
                   <tr>
-                    <td>Model</td>
-                    <td>Model</td>
+                    <td>Fuel</td>
+                    <td>{car.fuel}</td>
                   </tr>
                 </tbody>
               </table>
-              <button className="reserve-btn">Reserve Now</button>
+              <a href='#book-section' className="reserve-btn">Reserve Now</a>
             </div>
+                </>
+              )
+            
+           
+
+          })}
           </div>
         </div>
     </div>

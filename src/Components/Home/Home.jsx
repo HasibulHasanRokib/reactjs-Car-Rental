@@ -28,13 +28,13 @@ const Home = () => {
             <h1 className="text-6xl font-bold mt-3">
               Save <span className="text-red-500">big</span> with our car rental
             </h1>
-            <p className="mt-6 leading-8">
+            <p className="mt-6 leading-8 mb-3">
               Rent the car of your dreams. Unbeatable prices, unlimited miles,
               flexible pick-up options and much more.
             </p>
-            <button className="book">
+            <a href="#book-section" className="book">
               Book Ride <i className="fa-solid fa-circle-check"></i>
-            </button>
+            </a>
             <button className="learn">
               Learn More <i className="fa-solid fa-chevron-right"></i>
             </button>
@@ -45,7 +45,7 @@ const Home = () => {
         </div>
 
         <Form />
-
+        <a href="#home" className="up-btn"><i className="fa-solid fa-angle-up"></i></a>
         <Plan/>
 
         <Model />
@@ -80,7 +80,7 @@ const Home = () => {
               ultimate renting experience, so don't miss out on your chance to
               save big.
             </p>
-            <button className="details-btn">Find Details &rarr;</button>
+            <a href="#home" className="details-btn">Find Details &rarr;</a>
           </div>
           <div className="deals-card-section">
             <div className="deals-card">

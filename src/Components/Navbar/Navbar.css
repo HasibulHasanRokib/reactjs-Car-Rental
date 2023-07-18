@@ -1,11 +1,14 @@
 .navbar{
     display: flex;
-    margin: 2rem;
+    position: fixed;
     justify-content: space-around;
     align-items: center;
     position: relative;
+    margin: 2rem;
     z-index: 100;
+  
 }
+
 .nav-logo{
 cursor: pointer;
 
