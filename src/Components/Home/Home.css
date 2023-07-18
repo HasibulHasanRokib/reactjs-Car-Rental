@@ -406,4 +406,9 @@ overflow-y:scroll;
     .popUp-body{
         width: 100%;
     }
+    .up-btn{
+        left: 80%;
+        top: 85%;
+        border: 2px solid #fff;
+    }
 }
