@@ -10,7 +10,7 @@ const Footer = () => {
                 <p className='my-4'>We offers a big range of vehicles for all your diving needs. We have the perfect car to meet your needs.</p>
                 <p className='font-semibold my-2'><i className="fa-solid fa-phone"></i> (123) -456-789</p>
                 <p className='font-semibold my-2'><i className="fa-solid fa-envelope"></i> carrental@gmail.com</p>
-                <p>Development by Hasibul Hasan Rokib</p>
+                <p>Developed by Hasibul Hasan Rakib</p>
             </div>
             <div className="section-two">
                 <h3 className='my-4 font-bold text-xl'>COMPANY</h3>
