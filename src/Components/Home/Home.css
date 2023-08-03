@@ -333,7 +333,7 @@ overflow-y:scroll;
     }
     .form-body{
         height: auto;
-        grid-template-columns: auto;
+        grid-template-columns:repeat(1,1fr);
     }
     .plan-section{
        margin: 1rem 0;
@@ -386,6 +386,7 @@ overflow-y:scroll;
     .testimonials-section{
         width: 100%;
         height: auto;
+        padding: 1rem;
     }
     .testimonials-text{
         width: 100%;
@@ -413,7 +414,6 @@ overflow-y:scroll;
         width: 100%;
     }
     .up-btn{
-        display: none;
         left: 80%;
         top: 85%;
         border: 2px solid #fff;
