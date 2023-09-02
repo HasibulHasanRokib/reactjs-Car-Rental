@@ -12,3 +12,38 @@ body{
     background-color:#f8f8f8;
     color: #4b5563;
 }
+@layer components{
+    .nav-item{
+     @apply font-semibold mx-3 hover:text-[#ff4c30] active:text-[#ff4c30];
+    }
+    .select-field{
+        @apply mt-1 block w-full px-3 py-2 bg-white border border-slate-300  text-sm shadow-sm placeholder-slate-800
+        focus:outline-none disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+     invalid:border invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 ;
+    }
+    .input-field{
+        @apply mt-1 block  w-full px-3 py-4 bg-zinc-300 border border-slate-300  text-sm shadow-sm placeholder-slate-500
+        focus:outline-none
+        disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+        invalid:border-pink-500 invalid:text-pink-600
+        focus:invalid:border-pink-500 focus:invalid:ring-pink-500;
+    }
+    .card{
+        @apply w-[18rem] p-2;
+    }
+    .card-img{
+        @apply w-[8rem] lg:w-[10rem] mx-auto;
+    }
+    .models-option{
+        @apply bg-[#e9e9e9] mt-4 py-3 px-10 font-bold max-md:w-4/5 mx-auto w-full  hover:bg-red-500 hover:text-white;
+    }
+    td{
+        @apply py-2 border text-center bg-[#e9e9e9] border-gray-800;
+    }
+    .deals-card{
+        @apply flex mt-5 py-5 px-2 items-center;
+    }
+    .deals-card-text{
+        @apply max-w-xs;
+    }
+}

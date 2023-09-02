@@ -1,19 +1,16 @@
-import './Home.css'
-import modelCar from "/src/assets/audia1.jpg"
 import { CAR_DATA } from './CarData'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 
 
 const Model = () => {
-const [cars,setCars]=useState(CAR_DATA)
+const [cars]=useState(CAR_DATA)
 const[carId,setCarId]=useState("0")
-const[active,setActive]=useState("0")
+const[setActive]=useState("0")
 
   return (
-    <div>
-              <div className="models-section">
-          <div className="models-text">
+    <>
+          <section className="p-4 bg-white">
+          <div className="max-w-md mx-auto text-center">
             <h3 className="text-xl font-bold mt-5">Vehicle Models</h3>
             <h2 className="text-4xl font-bold mt-5 mb-3">Our rental fleet</h2>
             <p>
@@ -21,8 +18,8 @@ const[active,setActive]=useState("0")
               next adventure or business trip
             </p>
           </div>
-          <div className="models-body">
-            <div className="button-section">
+          <div className=" md:h-[60vh] flex max-md:flex-col md:items-center justify-between mt-10 lg:px-10 px-2">
+            <div className="flex flex-col">
          
               <button  className="models-option" onClick={()=>{
                 setCarId("0")
@@ -52,32 +49,32 @@ const[active,setActive]=useState("0")
             { cars[carId].map((car,index)=>{
               return(
                 <>
-                <div key={index} className="car-img">
+                <div key={index} className="max-lg:w-[20rem] max-md:mt-5 max-md:mx-auto">
               <img src={car.img} alt="" />
             </div>
                         
-            <div className="car-info">
-              <table>
-                <thead>
-                  <th>${car.price}</th>
-                  <th>/rent per day</th>
+            <div className="max-md:mt-8 max-md:mx-auto max-md:mb-4">
+              <table className='border'>
+                <thead className='border bg-red-500 text-white'>
+                  <th className='py-4 px-10'>${car.price}</th>
+                  <th className='py-4 px-10'>/rent per day</th>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Model</td>
-                    <td>{car.model}</td>
+                  <tr className='border'>
+                    <td >Model</td>
+                    <td >{car.model}</td>
                   </tr>
                   <tr>
-                    <td>Mark</td>
-                    <td>{car.mark}</td>
+                    <td >Mark</td>
+                    <td >{car.mark}</td>
                   </tr>
                   <tr>
-                    <td>Year</td>
-                    <td>{car.year}</td>
+                    <td >Year</td>
+                    <td >{car.year}</td>
                   </tr>
                   <tr>
-                    <td>Doors</td>
-                    <td>{car.doors}</td>
+                    <td >Doors</td>
+                    <td >{car.doors}</td>
                   </tr>
                   <tr>
                     <td>AC</td>
@@ -93,7 +90,7 @@ const[active,setActive]=useState("0")
                   </tr>
                 </tbody>
               </table>
-              <a href='#book-section' className="reserve-btn">Reserve Now</a>
+              <a href='#book-section' className="bg-[#ef4444] w-full inline-block text-white text-center py-3 mt-2 font-bold">Reserve Now</a>
             </div>
                 </>
               )
@@ -102,8 +99,8 @@ const[active,setActive]=useState("0")
 
           })}
           </div>
-        </div>
-    </div>
+        </section>
+    </>
   )
 }
 

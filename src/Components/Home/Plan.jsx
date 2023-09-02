@@ -4,12 +4,12 @@ import planThree from "/src/assets/download.png"
 
 const Plan = () => {
   return (
-    <div>
-              <div className="plan-section">
-          <div className="plan-text ">
-            <h4 className="text-2xl font-bold">Plan your trip now</h4>
+    <>
+          <section className="lg:w-4/5 mx-auto w-full mt-[4rem] p-4 mb-8">
+          <div className="text-center">
+            <h4 className="text-2xl font-bold mt-2">Plan your trip now</h4>
             <h3 className="text-5xl font-bold mt-5">Quick & easy car rental</h3>
-            <div className="plan-card">
+            <div className="flex max-md:flex-col items-center mt-20 justify-between md:gap-4">
               <div className="card">
                 <div className="card-img">
                   <img src={planOne} alt="" />
@@ -41,15 +41,15 @@ const Plan = () => {
                 <div className="card-body">
                   <h2 className="text-xl font-bold mb-3">Let`s Drive</h2>
                   <p>
-                    Whether you're hitting the open road, we've got you covered
+                    Whether you`re hitting the open road, we`ve got you covered
                     with our wide range of cars
                   </p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-    </div>
+        </section>
+    </>
   )
 }
 
